@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual,expected)) {
     console.log('✅ Assertion Passed: ' + actual + ' === ' + expected);
   } else {
@@ -7,12 +7,13 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(val1, val2) {
-  if (val1 === val2) {
-      return true;
-    } else {
-      return false;
+  const letter = [];
+  for (let letters of val1){
+    if (letters === val2) {
+      return letters[i]
     }
-  
+  }
+  return letter
 };
 
 const letterPositions = function(sentence) {
@@ -34,4 +35,5 @@ const letterPositions = function(sentence) {
     return results;
   };
   console.log(letterPositions("Lighthouse lab course"))
-  // assertArraysEqual(letterPositions("hello").e, [1]);
+  assertArraysEqual(letterPositions("hello").e, [1]);
+  assertArraysEqual(letterPositions("print some code").o, [7])
