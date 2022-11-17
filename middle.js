@@ -6,13 +6,35 @@ const assertEqual = function(actual, expected) {
     }
   };
   
-  const eqArrays = function(val1, val2) {
-    if (val1 === val2) {
-        return true;
-      } else {
-        return false;
+  const eqArrays = function(arrOne, arrTwo) {
+  
+    if(arrOne.length !== arrTwo.length){
+      return false;
+    }
+  
+    for (let i = 0; i < arrOne.length; i++) {
+    if(Array.isArray(arrOne[i]) && Array.isArray(arrTwo[i])){
+      if(!eqArrays(arrOne[i], arrTwo[i])){
+        return false
       }
+      }else if(arrOne[i] !== arrTwo[i]){
+        return false
+      }
+    }
     
+    return true
   };
 
-  const middle = funtion(array)
+  const middle = function(arr){
+    const midIndexArr = Math.floor(arr.length/2);
+    if(arr.length < 3){
+      console.log([]);
+    }else if(arr.length % 2 === 0){
+      console.log( arr.slice(midIndexArr -1, midIndexArr +1))
+    }else{
+      console.log( arr.slice(midIndexArr, midIndexArr +1))
+    }
+  }
+
+  middle([1, 2, 3, 4]) // => [2, 3]
+  middle([1, 2, 3, 4, 5]) // => [3, 4]   
