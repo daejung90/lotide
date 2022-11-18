@@ -6,16 +6,32 @@ const assertEqual = function(actual, expected) {
     }
   };
   
-  const eqArrays = function(val1, val2) {
-    if (val1 === val2) {
-        return true;
-      } else {
-        return false;
-      }
+  // const eqArrays = function(val1, val2) {
+  //   if (val1 === val2) {
+  //       return true;
+  //     } else {
+  //       return false;
+  //     }
     
+  // };
+
+  const eqArrays = function(arrOne, arrTwo) {
+  
+    if(arrOne.length !== arrTwo.length){
+      return false;
+    }
+  
+    for (let i = 0; i < arrOne.length; i++) {
+    if(Array.isArray(arrOne[i]) && Array.isArray(arrTwo[i])){
+      if(!eqArrays(arrOne[i], arrTwo[i])){
+        return false
+      }
+      }else if(arrOne[i] !== arrTwo[i]){
+        return false
+      }
+    }
+    
+    return true
   };
 
-  assertEqual("Lighthouse Labs", "Bootcamp");
-  assertEqual(1, 1);
-  assertEqual("winter", "winter");
-  assertEqual(3, 2);
+  
