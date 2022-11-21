@@ -27,8 +27,15 @@ const assertEqual = function(actual, expected) {
 
 
 const takeUntil = function(array, callback) {
-    for (let item of array) {
-      return (callback(array, 0))
+  let newArr = [];
+    for (let number of array) {
+     const breakPoint = callback(number);
+     if (breakPoint === false){
+      //if(!callback(number))
+      newArr.push(number)
+     } else {
+      return newArr
+     }
         
     }
     
