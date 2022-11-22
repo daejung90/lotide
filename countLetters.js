@@ -24,5 +24,7 @@ for (let letter of lowerCaseSentene){
 return letterCount
 }
 
-console.log(countLetters("Lighthouse in the house"));
-assertEqual(countLetters("letterCount").l, 1)
+// console.log(countLetters("Lighthouse in the house"));
+// assertEqual(countLetters("letterCount").l, 1)
+
+module.exports = countLetters

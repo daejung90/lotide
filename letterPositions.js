@@ -34,6 +34,8 @@ const letterPositions = function(sentence) {
     }
     return results;
   };
-  console.log(letterPositions("Lighthouse lab course"))
-  assertArraysEqual(letterPositions("hello").e, [1]);
-  assertArraysEqual(letterPositions("print some code").o, [7])
+  // console.log(letterPositions("Lighthouse lab course"))
+  // assertArraysEqual(letterPositions("hello").e, [1]);
+  // assertArraysEqual(letterPositions("print some code").o, [7])
+
+  module.exports = letterPositions;
