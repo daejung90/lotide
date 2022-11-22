@@ -28,11 +28,11 @@ const assertEqual = function(actual, expected) {
   const middle = function(arr){
     const midIndexArr = Math.floor(arr.length/2);
     if(arr.length < 3){
-      console.log([]);
+      return([]);
     }else if(arr.length % 2 === 0){
-      console.log( arr.slice(midIndexArr -1, midIndexArr +1))
+      return arr.slice(midIndexArr -1, midIndexArr +1)
     }else{
-      console.log( arr.slice(midIndexArr, midIndexArr +1))
+      return arr.slice(midIndexArr, midIndexArr +1)
     }
   }
 

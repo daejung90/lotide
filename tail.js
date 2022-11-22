@@ -1,10 +1,10 @@
-// const assertEqual = function(actual, expected) {
-//     if (actual === expected) {
-//       console.log('✅ Assertion Passed: ' + actual + ' === ' + expected);
-//     } else {
-//       console.log('❗️ Assertion Failed: ' + actual + ' !== ' + expected);
-//     }
-//   };
+const assertEqual = function(actual, expected) {
+    if (actual === expected) {
+      console.log('✅ Assertion Passed: ' + actual + ' === ' + expected);
+    } else {
+      console.log('❗️ Assertion Failed: ' + actual + ' !== ' + expected);
+    }
+  };
  
  
 const tail = function (element){
@@ -15,7 +15,7 @@ const tail = function (element){
     return newTail
 }
 
-// const words = ['Yo Yo', 'Lighthouse', 'Labs']
+const words = ['Yo Yo', 'Lighthouse', 'Labs']
 
 // assertEqual(words.length, 3);
 
