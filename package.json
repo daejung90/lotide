@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@daejung90/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lighthouse lotide project functions library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,10 @@
     "url": "git+https://github.com/daejung90/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Dan Jung",
+    "email": "djung.ca@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/daejung90/lotide/issues"
