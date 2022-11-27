@@ -26,7 +26,7 @@ const eqArrays = function(arrOne, arrTwo) {
 };
 
 
-// const words = ["ground", "control", "to", "major", "tom"];
+const words = ["ground", "control", "to", "major", "tom"];
 
 
 
